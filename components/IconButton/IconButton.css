@@ -10,7 +10,6 @@
 }
 .iconButtonIconContainer{
     width: 40px;
-    background-color: aliceblue;
 }
 .iconbuttonTextContiner{
     flex: 1;
@@ -23,4 +22,10 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     color: aliceblue;
+}
+.iconButtonIconContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }

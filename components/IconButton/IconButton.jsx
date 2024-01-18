@@ -10,6 +10,7 @@ function IconButton({
   buttonText,
   fontcolor,
   icon,
+  iconColor,
 }) {
   return (
     <div
@@ -25,7 +26,7 @@ function IconButton({
         className="iconButtonIconContainer"
         style={{ width: height ? height : 40 }}
       >
-        <FontAwesomeIcon icon={icon} />
+        <FontAwesomeIcon icon={icon} color={iconColor ? iconColor : "#fff"} />
       </div>
       <div className="iconbuttonTextContiner">
         <p style={{ color: fontcolor ? fontcolor : "#fff" }}>{buttonText}</p>

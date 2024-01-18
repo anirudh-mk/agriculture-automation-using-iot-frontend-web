@@ -13,9 +13,9 @@
 .sideNavigationBarContainer .sidenavigationBarHeadding h1{
     display: flex;
     margin: 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
     color: #076DFC;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }

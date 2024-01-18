@@ -1,5 +1,6 @@
 import React from "react";
 import "./SideNavigationBar.css";
+import IconButton from "../IconButton/IconButton";
 
 function SideNavigationBar() {
   return (
@@ -7,7 +8,11 @@ function SideNavigationBar() {
       <div className="sidenavigationBarHeadding">
         <h1>Dashboard</h1>
       </div>
-      <div className="sideNavigationBarButtonsContainer">hello</div>
+      <div className="sideNavigationBarButtonsContainer">
+        <IconButton />
+        <IconButton />
+        <IconButton />
+      </div>
     </div>
   );
 }

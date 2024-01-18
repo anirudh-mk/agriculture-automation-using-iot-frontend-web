@@ -1,0 +1,26 @@
+.iconButtonContainer{
+    width: 100%;
+    height: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #076DFC;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+}
+.iconButtonIconContainer{
+    width: 40px;
+    background-color: aliceblue;
+}
+.iconbuttonTextContiner{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.iconbuttonTextContiner p{
+    margin: 0 0 0 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: aliceblue;
+}

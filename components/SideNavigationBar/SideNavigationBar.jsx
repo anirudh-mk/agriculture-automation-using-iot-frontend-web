@@ -2,6 +2,8 @@ import React from "react";
 import "./SideNavigationBar.css";
 import IconButton from "../IconButton/IconButton";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 function SideNavigationBar() {
   return (
     <div className="sideNavigationBarContainer">
@@ -9,9 +11,7 @@ function SideNavigationBar() {
         <h1>Dashboard</h1>
       </div>
       <div className="sideNavigationBarButtonsContainer">
-        <IconButton />
-        <IconButton />
-        <IconButton />
+        <IconButton buttonText="User" icon={faUser} />
       </div>
     </div>
   );

@@ -1,17 +1,34 @@
 import React from "react";
 import "./IconButton.css";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
 
-function IconButton() {
+function IconButton({
+  height,
+  width,
+  backgroundColor,
+  borderRadious,
+  buttonText,
+  fontcolor,
+  icon,
+}) {
   return (
-    <div className="iconButtonContainer">
-      <div className="iconButtonIconContainer">
-        <FontAwesomeIcon icon={faUser} />
+    <div
+      className="iconButtonContainer"
+      style={{
+        width: width ? width : "100%",
+        height: height ? height : 40,
+        borderRadius: borderRadious ? borderRadious : 10,
+        backgroundColor: backgroundColor ? backgroundColor : "#076DFC",
+      }}
+    >
+      <div
+        className="iconButtonIconContainer"
+        style={{ width: height ? height : 40 }}
+      >
+        <FontAwesomeIcon icon={icon} />
       </div>
       <div className="iconbuttonTextContiner">
-        <p>Home</p>
+        <p style={{ color: fontcolor ? fontcolor : "#fff" }}>{buttonText}</p>
       </div>
     </div>
   );

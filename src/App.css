@@ -1,4 +1,22 @@
-.dashboardScreen{
-    display: flex;
-    flex-direction: row;
+.mainScreenContainer{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+.sidebarNavigationContainer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20vw;
+    height: 100vh;
+    background-color: aliceblue ;
+}
+.sidebarDetailsContainer{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 80vw;
+    height: 100vh;
+    background-color: antiquewhite;
 }

@@ -11,9 +11,11 @@ function IconButton({
   fontcolor,
   icon,
   iconColor,
+  onClick,
 }) {
   return (
     <div
+      onClick={onClick}
       className="iconButtonContainer"
       style={{
         width: width ? width : "100%",

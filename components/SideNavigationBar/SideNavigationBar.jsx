@@ -1,17 +1,11 @@
 import React from "react";
 import "./SideNavigationBar.css";
-import IconButton from "../IconButton/IconButton";
 
-import { faUser } from "@fortawesome/free-solid-svg-icons";
 function SideNavigationBar() {
   return (
     <div className="sideNavigationBarContainer">
-      <div className="sidenavigationBarHeadding">
-        <h1>Dashboard</h1>
-      </div>
-      <div className="sideNavigationBarButtonsContainer">
-        <IconButton buttonText="User" icon={faUser} />
-      </div>
+      <h1>Dashborard</h1>
+      <div className="sideNavigationBarButtonContainer"></div>
     </div>
   );
 }

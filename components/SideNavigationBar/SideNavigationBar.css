@@ -1,30 +1,7 @@
 .sideNavigationBarContainer{
-    display: flex;
-    flex-direction: column;
-    width: 18vw;
-    height: 96vh;
+    width: 100%;
+    height: 100%;
     background-color: '#fff';
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-}
-.sideNavigationBarContainer .sidenavigationBarHeadding{
-    display: flex;
-    padding: 30px;
-}
-.sideNavigationBarContainer .sidenavigationBarHeadding h1{
-    display: flex;
-    margin: 0px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 22px;
-    font-weight: 500;
-    color: #076DFC;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-.sideNavigationBarContainer .sideNavigationBarButtonsContainer{
-    display: flex;
-    flex-direction:column;
-    flex: 1;
-    align-items: center;
-    margin: 0 20px 0 20px;
-    /* background-color: #076DFC; */
 }

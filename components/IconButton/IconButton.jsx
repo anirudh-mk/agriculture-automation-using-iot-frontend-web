@@ -8,9 +8,8 @@ function IconButton({ height, width, borderRadius, backgroundColor }) {
         height: height,
         borderRadius: borderRadius,
         backgroundColor: backgroundColor,
-        position: "absolute",
-        right: 20,
-        top: 30,
+        marginTop: 10,
+        marginBottom: 10,
       }}
     ></div>
   );

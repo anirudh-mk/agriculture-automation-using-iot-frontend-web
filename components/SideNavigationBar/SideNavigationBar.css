@@ -33,6 +33,8 @@
 }
 .navigationButtonBottomContainer{
     display: flex;
-    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
     background-color: bisque;
 }

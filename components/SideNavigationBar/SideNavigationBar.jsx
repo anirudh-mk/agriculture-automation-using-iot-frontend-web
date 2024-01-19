@@ -27,7 +27,20 @@ function SideNavigationBar() {
           borderRadius={10}
         />
       </div>
-      <div className="navigationButtonBottomContainer"></div>
+      <div className="navigationButtonBottomContainer">
+        <IconButton
+          width={"16vw"}
+          height={50}
+          backgroundColor="#076DFC"
+          borderRadius={10}
+        />
+        <IconButton
+          width={"16vw"}
+          height={50}
+          backgroundColor="#076DFC"
+          borderRadius={10}
+        />
+      </div>
     </div>
   );
 }

@@ -24,6 +24,13 @@ const App = () => {
     };
   }, []);
 
+  const [screen, setScreen] = useState("");
+  const handleUserClick = () => {
+    setScreen("user");
+  };
+  const handleVegitabelClick = () => {
+    setScreen("vegitable");
+  };
   return (
     <>
       <div
@@ -33,7 +40,10 @@ const App = () => {
           height: screenSize.height - 20,
         }}
       >
-        <SideNavigationBar />
+        <SideNavigationBar
+          handleUserClick={handleUserClick}
+          handleVegitabelClick={handleVegitabelClick}
+        />
       </div>
       <div
         className="sidebarDetailsContainer"
@@ -42,7 +52,7 @@ const App = () => {
           height: screenSize.height - 20,
         }}
       >
-        <UserDetailsCard />
+        {screen === "user" && <UserDetailsCard />}
       </div>
     </>
   );

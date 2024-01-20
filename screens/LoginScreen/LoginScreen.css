@@ -3,24 +3,54 @@
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    background-color: aqua;
 }
-
-@media (max-width:768px) {
-    .loginScreenContainer{
-        background-color: bisque;
-    }
+.loginScreenInputContainer{
+    width: 500px;
+    height: 550px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-@media (min-width:769px) and (max-width:992px){
-    .loginScreenContainer{
-        background-color: rgb(101, 65, 21);
-    }
+.loginScreenInputContainerHeaddingContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
-@media (min-width:993px) and (max-width:1200px){
-    .loginScreenContainer{
-        background-color: rgb(29, 17, 2);
-    }
+.loginScreenInputContainerHeaddingContainer{
+    display: flex;
+    color: #076DFC;
+}
+.loginScreenInputDataContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginScreenInputLabels{
+    width: 400px;
+    font-size: 20px;
+}
+.userNameInput{
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 400px;
+}
+.password{
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 400px;
+}
+.loginScreenForgotPassword{
+    display: inline;
+    text-align: end;
+    font-size: 16px;
+    width: 400px;
+    margin: 10px 0 20px 0;
+    color: #076DFC;
 }

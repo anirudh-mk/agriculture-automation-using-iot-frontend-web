@@ -11,8 +11,7 @@ p{
 
 /* ------------------- phone -------------------- */
 @media (max-width:600px) {
-    .loginScreenContainer{
-    }
+
     .loginScreenInputContainer{
         width: 250px;
     }
@@ -49,14 +48,10 @@ p{
 /* ------------------ tablet -------------------- */
 
 @media (min-width:769px) and (max-width:992px){
-    .loginScreenContainer{
-    }
+
 }
 
 /* ------------------- tablets -------------------- */
 
 @media (min-width:993px) and (max-width:1200px){
-    .loginScreenContainer{
-
-    }
 }

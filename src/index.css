@@ -8,3 +8,36 @@ h1{
 p{
     margin: 0px;
 }
+
+/* ------------------- phone -------------------- */
+@media (max-width:400px) {
+    .loginScreenContainer{
+    }
+    .loginScreenInputContainer{
+        width: 250px;
+    }
+}
+
+@media (min-width:401px) and (max-width:768px) {
+    .loginScreenContainer{
+        background-color: bisque;
+    }
+    .loginScreenInputContainer{
+        width: 300px;
+    }
+}
+
+/* ------------------- tablet -------------------- */
+
+@media (min-width:769px) and (max-width:992px){
+    .loginScreenContainer{
+    }
+}
+
+/* ------------------- tablets -------------------- */
+
+@media (min-width:993px) and (max-width:1200px){
+    .loginScreenContainer{
+
+    }
+}

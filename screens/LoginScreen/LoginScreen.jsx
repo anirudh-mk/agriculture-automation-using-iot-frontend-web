@@ -2,7 +2,7 @@ import React from "react";
 import "./LoginScreen.css";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
 
-import IconButton from "../../components/IconButton/IconButton";
+import TextButton from "../../components/TextButton/TextButton";
 
 function LoginScreen() {
   return (
@@ -18,13 +18,7 @@ function LoginScreen() {
           <input className="password" type="password" />
           <p className="loginScreenForgotPassword">ForgotPassword?</p>
           <div className="loginScreenLoginButtonContainer">
-            <IconButton
-              height={50}
-              backgroundColor="#076DFC"
-              borderRadius={10}
-              buttonText="User"
-              icon={faUsers}
-            />
+            <TextButton width={300} height={50} buttonText="Login"></TextButton>
           </div>
         </div>
       </div>

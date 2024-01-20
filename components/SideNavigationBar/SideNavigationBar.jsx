@@ -1,7 +1,13 @@
 import React from "react";
 import "./SideNavigationBar.css";
 import IconButton from "../IconButton/IconButton";
-function SideNavigationBar() {
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faPepperHot } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faMessage } from "@fortawesome/free-solid-svg-icons";
+import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+
+function SideNavigationBar({ handleUserClick, handleVegitabelClick }) {
   return (
     <div className="sideNavigationBarContainer">
       <div className="sideNavigationBarHeaddingContainer">
@@ -13,18 +19,26 @@ function SideNavigationBar() {
           height={50}
           backgroundColor="#076DFC"
           borderRadius={10}
+          buttonText="User"
+          icon={faUsers}
+          onClick={handleUserClick}
         />
         <IconButton
           width={"16vw"}
           height={50}
           backgroundColor="#076DFC"
           borderRadius={10}
+          buttonText="Vegetables"
+          icon={faPepperHot}
+          onClick={handleVegitabelClick}
         />
         <IconButton
           width={"16vw"}
           height={50}
           backgroundColor="#076DFC"
           borderRadius={10}
+          buttonText="Map"
+          icon={faLocationDot}
         />
       </div>
       <div className="navigationButtonBottomContainer">
@@ -33,12 +47,17 @@ function SideNavigationBar() {
           height={50}
           backgroundColor="#076DFC"
           borderRadius={10}
+          buttonText="Messages"
+          icon={faMessage}
         />
         <IconButton
           width={"16vw"}
           height={50}
-          backgroundColor="#076DFC"
+          backgroundColor="tomato"
           borderRadius={10}
+          marginBottom={30}
+          buttonText="Logout"
+          icon={faRightFromBracket}
         />
       </div>
     </div>

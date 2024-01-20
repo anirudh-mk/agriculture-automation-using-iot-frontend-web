@@ -17,14 +17,15 @@ function LoginScreen() {
           <p className="loginScreenInputLabels">Password</p>
           <input className="password" type="password" />
           <p className="loginScreenForgotPassword">ForgotPassword?</p>
-          <IconButton
-            width={300}
-            height={50}
-            backgroundColor="#076DFC"
-            borderRadius={10}
-            buttonText="User"
-            icon={faUsers}
-          />
+          <div className="loginScreenLoginButtonContainer">
+            <IconButton
+              height={50}
+              backgroundColor="#076DFC"
+              borderRadius={10}
+              buttonText="User"
+              icon={faUsers}
+            />
+          </div>
         </div>
       </div>
     </div>

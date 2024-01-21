@@ -1,4 +1,4 @@
-.loginScreenContainer{
+/* .loginScreenContainer{
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -64,4 +64,69 @@
 .loginScreenForgotPassword:hover{
     cursor: pointer;
     color: #000000;
+} */
+.loginScreenContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loginScreenCardContianer{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    width: 70vw;
+    height: 80vh;
+    box-shadow: 5px 4px 10px 1px rgba(1, 1, 1, .1);
+}
+
+.loginScreenImageContainer{
+    width: 55%;
+    height: 100%;
+}
+.loginScreenLoginContainer{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.loginScreenContentContainer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.loginScreenHeadding{
+    color: #076DFC;
+    font-size: 40px;
+}
+.loginScreenDescription{
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+.loginScreenInputs{
+    height: 40px;
+    margin-bottom: 20px;
+    border: 3px solid #076DFC;
+    border-radius: 5px;
+    
+}
+.loginScreenButtonContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.loginScreenForgotPasswordContainer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    
+}
+.loginScreenForgotPassword{
+    display: inline;
+    text-align: right;
 }

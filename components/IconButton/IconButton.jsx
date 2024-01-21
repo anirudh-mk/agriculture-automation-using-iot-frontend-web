@@ -7,8 +7,6 @@ function IconButton({
   width,
   borderRadius,
   backgroundColor,
-  marginTop,
-  marginBottom,
   buttonText,
   color,
   icon,
@@ -22,8 +20,6 @@ function IconButton({
         height: height ? height : 40,
         borderRadius: borderRadius ? borderRadius : 10,
         backgroundColor: backgroundColor ? backgroundColor : "#076DFC",
-        marginTop: marginTop ? marginTop : 10,
-        marginBottom: marginBottom ? marginBottom : 10,
       }}
       onClick={onClick}
     >

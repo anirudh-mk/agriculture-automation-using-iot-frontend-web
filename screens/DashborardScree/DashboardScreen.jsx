@@ -2,6 +2,7 @@ import React from "react";
 import "./DashboardScreen.css";
 
 import SideNavigationBar from "../../components/SideNavigationBar/SideNavigationBar";
+import UserDetailsCard from "../../components/UserDetailsCard/UserDetailsCard";
 
 function DashboardScreen() {
   return (
@@ -9,7 +10,9 @@ function DashboardScreen() {
       <div className="dashboardScreenSideContainer">
         <SideNavigationBar />
       </div>
-      <div className="dashboardScreenDetailsContainer"></div>
+      <div className="dashboardScreenDetailsContainer">
+        <UserDetailsCard />
+      </div>
     </div>
   );
 }

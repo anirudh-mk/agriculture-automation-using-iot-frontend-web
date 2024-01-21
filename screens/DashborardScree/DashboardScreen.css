@@ -9,8 +9,6 @@
     flex-direction: column;
     width: 20%;
     height: 100%;
-    align-items: center;
-    justify-content: center;
 }
 .dashboardScreenDetailsContainer{
     display: flex;

@@ -11,7 +11,7 @@ function DashboardScreen() {
         <SideNavigationBar />
       </div>
       <div className="dashboardScreenDetailsContainer">
-        {/* <UserDetailsCard /> */}
+        <UserDetailsCard />
       </div>
     </div>
   );

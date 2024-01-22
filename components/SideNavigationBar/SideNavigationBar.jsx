@@ -7,7 +7,11 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faMessage } from "@fortawesome/free-solid-svg-icons";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
-function SideNavigationBar({ handleUserClick, handleVegitabelClick }) {
+function SideNavigationBar({
+  handleUserClick,
+  handleVegitabelClick,
+  handleMapClick,
+}) {
   return (
     <div className="sideNavigationBarContainer">
       <div className="sideNavigationBarHeaddingContainer">
@@ -41,6 +45,7 @@ function SideNavigationBar({ handleUserClick, handleVegitabelClick }) {
             borderRadius={10}
             buttonText="Map"
             icon={faLocationDot}
+            onClick={handleMapClick}
           />
         </div>
       </div>

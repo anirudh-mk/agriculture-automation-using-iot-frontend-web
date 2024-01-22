@@ -31,9 +31,7 @@ function IconButton({
         />
       </div>
       <div className="iconButtonTextContainer">
-        <p style={{ color: color ? color : "#fff", width: width - height }}>
-          {buttonText}
-        </p>
+        <p style={{ color: color ? color : "#fff" }}>{buttonText}</p>
       </div>
     </div>
   );

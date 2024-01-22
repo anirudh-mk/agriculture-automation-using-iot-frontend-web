@@ -5,8 +5,8 @@ import DashboardScreen from "../screens/DashborardScree/DashboardScreen";
 function App() {
   return (
     <>
-      <LoginScreen />
-      {/* <DashboardScreen /> */}
+      {/* <LoginScreen /> */}
+      <DashboardScreen />
     </>
   );
 }

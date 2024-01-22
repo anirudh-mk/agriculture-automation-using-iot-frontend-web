@@ -23,11 +23,39 @@
     font-size: 28px;
     color: #076DFC;
 }
-.userCreateCardCloseButtonContainer{
+.userCreateCardCloseButtonIconContainer{
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: end;
     padding-right: 40px;
+}
+.userCreateCardCloseIcon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.userCreateCardInputsContianer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    flex: 1;
+}
+.userCreateCardInputHeadding{
+    font-size: 20px;
+}
+.userCreateCardInput{
+    width: 400px;
+    height: 24px;
+}
+.userCreateCardBottomButtonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-right:  40px;
+    height: 100px;
+}
+.userCreateCardCloseButtonContainer{
+    margin-right: 10px;
 }

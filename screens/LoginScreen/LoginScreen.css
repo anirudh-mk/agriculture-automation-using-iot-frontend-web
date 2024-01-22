@@ -1,23 +1,38 @@
 .loginScreenContainer{
     width: 100vw;
     height: 100vh;
+    background-image: url('../assets/loginScreenCard.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .loginScreenCardContianer{
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     border-radius: 20px;
-    width: 70vw;
-    height: 80vh;
+    width: 70%;
+    height: 70%;
     box-shadow: 5px 4px 10px 1px rgba(1, 1, 1, .1);
 }
 
 .loginScreenImageContainer{
-    width: 55%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     height: 100%;
+}
+.loginScreenImageContainer img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .loginScreenLoginContainer{
     display: flex;

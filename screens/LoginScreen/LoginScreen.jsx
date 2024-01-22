@@ -1,12 +1,13 @@
 import React from "react";
 import "./LoginScreen.css";
 import TextButton from "../../components/TextButton/TextButton";
+import LoginScreenImage from "../../assets/loginScreenImage.jpg";
 function LoginScreen() {
   return (
     <div className="loginScreenContainer">
       <div className="loginScreenCardContianer">
         <div className="loginScreenImageContainer">
-          <img src="" alt="" />
+          <img src={LoginScreenImage} alt="" />
         </div>
         <div className="loginScreenLoginContainer">
           <div className="loginScreenContentContainer">

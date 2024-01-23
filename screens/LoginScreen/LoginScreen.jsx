@@ -7,7 +7,7 @@ function LoginScreen() {
     <div className="loginScreenContainer">
       <div className="loginScreenCardContianer">
         <div className="loginScreenImageContainer">
-          <img src={LoginScreenImage} alt="" />
+          <img src={LoginScreenImage} />
         </div>
         <div className="loginScreenLoginContainer">
           <div className="loginScreenContentContainer">
@@ -16,7 +16,7 @@ function LoginScreen() {
             <input className="loginScreenInputs" type="text" />
             <input className="loginScreenInputs" type="password" />
             <div className="loginScreenButtonContainer">
-              <TextButton width={"45%"} height={50} buttonText="Login" />
+              <TextButton width={"45%"} height={38} buttonText="Login" />
               <div className="loginScreenForgotPasswordContainer">
                 <p className="loginScreenForgotPassword">Forgot password?</p>
               </div>

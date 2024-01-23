@@ -2,9 +2,8 @@ import React, { useCallback, useState } from "react";
 import "./UserCreateCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-
 import TextButton from "..//TextButton/TextButton";
-import { text } from "@fortawesome/fontawesome-svg-core";
+
 function UserCreateCard({ handleCloseButton }) {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");

@@ -16,19 +16,19 @@ function VegetableDetailsCard() {
 
   return (
     <div
-      className="VegetableDetailsCardContainer"
+      className="vegetableDetailsCardContainer"
       style={{
         alignItems: create && "center",
         justifyContent: create && "center",
       }}
     >
       {!create && (
-        <div className="VegetableDetailsCardTopContainer">
-          <div className="VegetableDetailsCardTopHeadding">
+        <div className="vegetableDetailsCardTopContainer">
+          <div className="vegetableDetailsCardTopHeadding">
             <h1>Vegetables</h1>
           </div>
-          <div className="VegetableDetailsCardCreateButtonContainer">
-            <div className="VegetableDetailsCardCreateButtonContainer">
+          <div className="vegetableDetailsCardCreateButtonContainer">
+            <div className="vegetableDetailsCardCreateButtonContainer">
               <IconButton
                 width={140}
                 height={50}

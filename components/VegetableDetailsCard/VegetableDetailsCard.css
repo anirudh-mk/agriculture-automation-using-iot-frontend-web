@@ -1,10 +1,41 @@
-.vegetableDetailsCardContainer{
+.vegetableDetailsCardContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height:100%;
+    height: 100%;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px 0 20px 0;
+}
+
+.vegetableDetailsCardTopContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+}
+
+.vegetableDetailsCardTopHeadding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vegetableDetailsCardTopHeadding h1 {
+    padding-left: 40px;
+    font-size: 28px;
+    color: #076DFC;
+}
+
+.vegetableDetailsCardCreateButtonContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.vegetableDetailsCardCreateButtonContainer {
+    padding-right: 20px;
 }

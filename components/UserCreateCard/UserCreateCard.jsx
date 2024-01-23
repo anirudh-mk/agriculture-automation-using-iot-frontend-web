@@ -16,7 +16,11 @@ function UserCreateCard({ handleCloseButton }) {
   const [location, setLocation] = useState("");
   const [machineCode, setMachineCode] = useState("");
   const [address, setAddress] = useState("");
-
+  const [invalidEmail, setInvalidEmail] = useState(false);
+  const [invalidPhone, setInvalidPhone] = useState(false);
+  const [firstNamePresent, setFirstNamePresent] = useState(false);
+  const [emailPresent, setEmailPresent] = useState(false);
+  const [phonePresent, setPhonePresent] = useState(false);
   const handleFirstName = (text) => {
     setFirstName(text.target.value);
   };
@@ -47,6 +51,36 @@ function UserCreateCard({ handleCloseButton }) {
   };
   const handleAddress = (text) => {
     setAddress(text.target.value);
+  };
+
+  const handleUserRegistration = () => {
+    if (firstName === null) {
+      setFirstNamePresent(true);
+    } else {
+      setFirstNamePresent(false);
+    }
+    const UpperCaseFirstName = firstName.charAt(0).toUpperCase();
+    const UpperCaseLastName = lastName.charAt(0).toUpperCase();
+    if (email.includes("@") && email.includes(".com")) {
+      setInvalidEmail(false);
+    } else {
+      setInvalidEmail(true);
+    }
+    if (email === null) {
+      setEmailPresent(true);
+    } else {
+      setEmailPresent(false);
+    }
+    if (phone === null) {
+      setPhonePresent(true);
+    } else {
+      setPhonePresent(false);
+    }
+    if (phone >= 12) {
+      setInvalidPhone(true);
+    } else {
+      setInvalidPhone(false);
+    }
   };
   return (
     <div className="userCreateCardContainer">
@@ -165,7 +199,12 @@ function UserCreateCard({ handleCloseButton }) {
             onClick={handleCloseButton}
           />
         </div>
-        <TextButton buttonText="submit" width={120} height={40} />
+        <TextButton
+          buttonText="submit"
+          width={120}
+          height={40}
+          onClick={handleUserRegistration}
+        />
       </div>
     </div>
   );

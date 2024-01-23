@@ -79,7 +79,7 @@
     margin-right: 10px;
 }
 
-.upload {
-    width: 100px;
-    height: 100px;
+.error {
+    font-size: 14px;
+    color: tomato;
 }

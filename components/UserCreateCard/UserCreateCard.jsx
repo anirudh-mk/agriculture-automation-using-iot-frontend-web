@@ -21,6 +21,8 @@ function UserCreateCard({ handleCloseButton }) {
   const [firstNamePresent, setFirstNamePresent] = useState(false);
   const [emailPresent, setEmailPresent] = useState(false);
   const [phonePresent, setPhonePresent] = useState(false);
+  const [usernamePresent, setUsernamePresent] = useState(false);
+
   const handleFirstName = (text) => {
     setFirstName(text.target.value);
   };
@@ -54,24 +56,27 @@ function UserCreateCard({ handleCloseButton }) {
   };
 
   const handleUserRegistration = () => {
-    if (firstName === null) {
+    if (firstName === "") {
       setFirstNamePresent(true);
     } else {
       setFirstNamePresent(false);
     }
-    const UpperCaseFirstName = firstName.charAt(0).toUpperCase();
-    const UpperCaseLastName = lastName.charAt(0).toUpperCase();
     if (email.includes("@") && email.includes(".com")) {
       setInvalidEmail(false);
     } else {
       setInvalidEmail(true);
     }
-    if (email === null) {
+    if (email === "") {
       setEmailPresent(true);
     } else {
       setEmailPresent(false);
     }
-    if (phone === null) {
+    if (username == "") {
+      setUsernamePresent(true);
+    } else {
+      setUsernamePresent(false);
+    }
+    if (phone === "") {
       setPhonePresent(true);
     } else {
       setPhonePresent(false);
@@ -106,6 +111,7 @@ function UserCreateCard({ handleCloseButton }) {
               className="userCreateCardInput"
               onChange={handleFirstName}
             />
+            {firstNamePresent && <p className="error">required field</p>}
           </div>
           <div className="userCreateCardInputsColumnContainer">
             <p className="userCreateCardInputHeadding">Last Name</p>
@@ -124,6 +130,11 @@ function UserCreateCard({ handleCloseButton }) {
               className="userCreateCardInput"
               onChange={handleEmail}
             />
+            {!emailPresent ? (
+              invalidEmail && <p className="error">invalid email</p>
+            ) : (
+              <p className="error">email required</p>
+            )}
           </div>
           <div className="userCreateCardInputsColumnContainer">
             <p className="userCreateCardInputHeadding">Username</p>
@@ -132,6 +143,7 @@ function UserCreateCard({ handleCloseButton }) {
               className="userCreateCardInput"
               onChange={handleUsername}
             />
+            {usernamePresent && <p className="error">required field</p>}
           </div>
         </div>
         <div className="userCreateCardInputsRowContainer">
@@ -160,6 +172,11 @@ function UserCreateCard({ handleCloseButton }) {
               className="userCreateCardInput"
               onChange={handlePhone}
             />
+            {!phonePresent ? (
+              invalidPhone && <p className="error">Invalid Phone</p>
+            ) : (
+              <p className="error">Phone Required</p>
+            )}
           </div>
           <div className="userCreateCardInputsColumnContainer">
             <p className="userCreateCardInputHeadding">Location</p>

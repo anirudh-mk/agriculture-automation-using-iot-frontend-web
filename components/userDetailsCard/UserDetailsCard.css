@@ -1,36 +1,49 @@
-.userDetailsCardContainer{
+.userDetailsCardContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height:100%;
+    height: 100%;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px 0 20px 0;
 }
-.userDetailsCardTopContainer{
+
+.userDetailsCardTopContainer {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100px;
 }
-.userDetailsCardTopHeadding{
+
+.userDetailsCardTopHeadding {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.userDetailsCardTopHeadding h1{
+
+.userDetailsCardTopHeadding h1 {
     padding-left: 40px;
     font-size: 28px;
     color: #076DFC;
 }
-.userDetailsCardCreateButtonContainer{
+
+.userDetailsCardCreateButtonContainer {
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: end;
 }
-.userDetailsCardCreateButtonContainer{
+
+.userDetailsCardCreateButtonContainer {
     padding-right: 20px;
+}
+
+.userDetailsCardDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: aqua;
+    padding: 20px;
 }

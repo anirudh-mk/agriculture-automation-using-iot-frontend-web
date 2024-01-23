@@ -4,6 +4,7 @@ import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 
 import IconButton from "../IconButton/IconButton";
 import UserCreateCard from "../UserCreateCard/UserCreateCard";
+import UserCard from "../UserCard/UserCard";
 
 function UserDetailsCard({}) {
   const [create, setCreate] = useState(false);
@@ -24,22 +25,27 @@ function UserDetailsCard({}) {
       }}
     >
       {!create && (
-        <div className="userDetailsCardTopContainer">
-          <div className="userDetailsCardTopHeadding">
-            <h1>User</h1>
-          </div>
-          <div className="userDetailsCardCreateButtonContainer">
+        <>
+          <div className="userDetailsCardTopContainer">
+            <div className="userDetailsCardTopHeadding">
+              <h1>User</h1>
+            </div>
             <div className="userDetailsCardCreateButtonContainer">
-              <IconButton
-                width={140}
-                height={50}
-                buttonText="create"
-                onClick={handelCreate}
-                icon={faCirclePlus}
-              />
+              <div className="userDetailsCardCreateButtonContainer">
+                <IconButton
+                  width={140}
+                  height={50}
+                  buttonText="create"
+                  onClick={handelCreate}
+                  icon={faCirclePlus}
+                />
+              </div>
             </div>
           </div>
-        </div>
+          <div className="userDetailsCardDetailsContainer">
+            <UserCard />
+          </div>
+        </>
       )}
       {create && <UserCreateCard handleCloseButton={handleClose} />}
     </div>

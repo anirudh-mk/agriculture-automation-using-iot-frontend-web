@@ -44,8 +44,17 @@
 .userCreateCardInputsContianer {
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
+    align-items: center;
     flex: 1;
+}
+
+.userCreateCardInputsRowContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.userCreateCardInputsColumnContainer {
+    margin: 10px;
 }
 
 .userCreateCardInputHeadding {
@@ -53,7 +62,7 @@
 }
 
 .userCreateCardInput {
-    width: 400px;
+    width: 350px;
     height: 24px;
 }
 

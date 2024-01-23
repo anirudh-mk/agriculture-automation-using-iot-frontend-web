@@ -1,4 +1,4 @@
-.userCreateCardContainer{
+.userCreateCardContainer {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -7,23 +7,27 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.userCreateCardTopContainer{
+
+.userCreateCardTopContainer {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100px;
 }
-.userCreateCardHeaddingContainer{
+
+.userCreateCardHeaddingContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 40px;
 }
-.userCreateCardHeaddingContainer h1{
+
+.userCreateCardHeaddingContainer h1 {
     font-size: 28px;
     color: #076DFC;
 }
-.userCreateCardCloseButtonIconContainer{
+
+.userCreateCardCloseButtonIconContainer {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -31,31 +35,42 @@
     align-items: end;
     padding-right: 40px;
 }
-.userCreateCardCloseIcon:hover{
+
+.userCreateCardCloseIcon:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-.userCreateCardInputsContianer{
+
+.userCreateCardInputsContianer {
     display: flex;
     flex-direction: column;
     padding-left: 40px;
     flex: 1;
 }
-.userCreateCardInputHeadding{
+
+.userCreateCardInputHeadding {
     font-size: 20px;
 }
-.userCreateCardInput{
+
+.userCreateCardInput {
     width: 400px;
     height: 24px;
 }
-.userCreateCardBottomButtonContainer{
+
+.userCreateCardBottomButtonContainer {
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    margin-right:  40px;
+    margin-right: 40px;
     height: 100px;
 }
-.userCreateCardCloseButtonContainer{
+
+.userCreateCardCloseButtonContainer {
     margin-right: 10px;
+}
+
+.upload {
+    width: 100px;
+    height: 100px;
 }

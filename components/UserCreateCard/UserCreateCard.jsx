@@ -33,6 +33,7 @@ function UserCreateCard({ handleCloseButton }) {
         <input type="text" className="userCreateCardInput" />
         <p className="userCreateCardInputHeadding">Confirm Password</p>
         <input type="text" className="userCreateCardInput" />
+        <input type="file" name="" id="" />
       </div>
       <div className="userCreateCardBottomButtonContainer">
         <div className="userCreateCardCloseButtonContainer">

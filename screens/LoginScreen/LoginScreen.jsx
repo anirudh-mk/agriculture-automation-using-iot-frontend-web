@@ -2,7 +2,7 @@ import React from "react";
 import "./LoginScreen.css";
 import TextButton from "../../components/TextButton/TextButton";
 import LoginScreenImage from "../../assets/loginScreenImage.png";
-function LoginScreen() {
+function LoginScreen({ handleLogin }) {
   return (
     <div className="loginScreenContainer">
       <div className="loginScreenCardContianer">
@@ -18,7 +18,12 @@ function LoginScreen() {
             <p>Password</p>
             <input className="loginScreenInputs" type="password" />
             <div className="loginScreenButtonContainer">
-              <TextButton width={"45%"} height={38} buttonText="Login" />
+              <TextButton
+                width={"45%"}
+                height={38}
+                buttonText="Login"
+                onClick={handleLogin}
+              />
               <div className="loginScreenForgotPasswordContainer">
                 <p className="loginScreenForgotPassword">Forgot password?</p>
               </div>

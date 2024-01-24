@@ -11,6 +11,7 @@ function SideNavigationBar({
   handleUserClick,
   handleVegitabelClick,
   handleMapClick,
+  handleLogoutClick,
 }) {
   return (
     <div className="sideNavigationBarContainer">
@@ -66,6 +67,7 @@ function SideNavigationBar({
             borderRadius={10}
             buttonText="Logout"
             icon={faRightFromBracket}
+            onClick={handleLogoutClick}
           />
         </div>
       </div>

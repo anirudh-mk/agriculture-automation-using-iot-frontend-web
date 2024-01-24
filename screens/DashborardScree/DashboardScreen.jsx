@@ -6,7 +6,7 @@ import UserDetailsCard from "../../components/UserDetailsCard/UserDetailsCard";
 import VegetableDetailsCard from "../../components/VegetableDetailsCard/VegetableDetailsCard";
 import MapDetailsCard from "../../components/MapDeatailsCard/MapDetailsCard";
 
-function DashboardScreen() {
+function DashboardScreen({ handleLogout }) {
   const [navigation, setNavigation] = useState("userCard");
 
   const handleUserClick = () => {
@@ -27,6 +27,7 @@ function DashboardScreen() {
           handleUserClick={handleUserClick}
           handleVegitabelClick={handleVegitabelClick}
           handleMapClick={handleMapClick}
+          handleLogoutClick={handleLogout}
         />
       </div>
       <div className="dashboardScreenDetailsContainer">

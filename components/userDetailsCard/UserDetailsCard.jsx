@@ -27,39 +27,40 @@ function UserDetailsCard({}) {
       {!create && (
         <>
           <div className="userDetailsCardTopContainer">
-            <div className="userDetailsCardTopHeadding">
+            <div className="headdingContainer">
               <h1>User</h1>
             </div>
-            <div className="userDetailsCardCreateButtonContainer">
-              <div className="userDetailsCardCreateButtonContainer">
-                <IconButton
-                  width={140}
-                  height={50}
-                  buttonText="create"
-                  onClick={handelCreate}
-                  icon={faCirclePlus}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="userDetailsCardDetailsHeaddingContainer">
-            <div className="serialNoContianer">
-              <p>Serial No</p>
-            </div>
-            <div className="userNameContainer">
-              <p>User Name</p>
-            </div>
-            <div className="farmNameContainer">
-              <p>Farm Name</p>
-            </div>
-            <div className="locationContainer">
-              <p>Location</p>
-            </div>
-            <div className="searchBarContainer">
-              <input type="text" />
+            <div className="CreateButtonContainer">
+              <IconButton
+                width={140}
+                height={50}
+                buttonText="create"
+                onClick={handelCreate}
+                icon={faCirclePlus}
+              />
             </div>
           </div>
           <div className="userDetailsCardDetailsContainer">
+            <div className="headdingContainer">
+              <div className="serialNoContianer">
+                <p>Serial No</p>
+              </div>
+              <div className="userNameContainer">
+                <p>User Name</p>
+              </div>
+              <div className="farmNameContainer">
+                <p>Farm Name</p>
+              </div>
+              <div className="locationContainer">
+                <p>Location</p>
+              </div>
+              <div className="searchBarContainer">
+                <input type="text" />
+              </div>
+            </div>
+            <UserCard />
+            <UserCard />
+            <UserCard />
             <UserCard />
           </div>
         </>

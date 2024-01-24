@@ -16,29 +16,27 @@
     height: 100px;
 }
 
-.userDetailsCardTopHeadding {
+.userDetailsCardTopContainer .headdingContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.userDetailsCardTopHeadding h1 {
+.userDetailsCardTopContainer .headdingContainer h1 {
     padding-left: 40px;
     font-size: 28px;
     color: #076DFC;
 }
 
-.userDetailsCardCreateButtonContainer {
+.userDetailsCardTopContainer .CreateButtonContainer {
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: end;
-}
-
-.userDetailsCardCreateButtonContainer {
     padding-right: 20px;
 }
+
 
 .userDetailsCardDetailsContainer {
     display: flex;
@@ -47,14 +45,15 @@
     padding: 20px;
 }
 
-.userDetailsCardDetailsHeaddingContainer {
+.userDetailsCardDetailsContainer .headdingContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
 }
 
-.userDetailsCardDetailsHeaddingContainer P {
+.userDetailsCardDetailsContainer .headdingContainer p {
     color: #000;
     font-size: 20px;
     font-style: normal;
@@ -62,40 +61,42 @@
     line-height: normal;
 }
 
-.userDetailsCardDetailsHeaddingContainer input {
+.userDetailsCardDetailsContainer .headdingContainer input {
     border-radius: 20px;
     border: 0px solid #000;
     background: #F5F5F5;
     width: 90%;
     height: 40px;
     flex-shrink: 0;
+    font-size: 20px;
+    padding-left: 20px;
 }
 
-.userDetailsCardDetailsHeaddingContainer .serialNoContianer {
+.userDetailsCardDetailsContainer .headdingContainer .serialNoContianer {
     display: flex;
     width: 10%;
     justify-content: center;
 }
 
-.userDetailsCardDetailsHeaddingContainer .userNameContainer {
+.userDetailsCardDetailsContainer .headdingContainer .userNameContainer {
     display: flex;
     width: 20%;
     justify-content: center;
 }
 
-.userDetailsCardDetailsHeaddingContainer .farmNameContainer {
+.userDetailsCardDetailsContainer .headdingContainer .farmNameContainer {
     display: flex;
     width: 20%;
     justify-content: center;
 }
 
-.userDetailsCardDetailsHeaddingContainer .locationContainer {
+.userDetailsCardDetailsContainer .headdingContainer .locationContainer {
     display: flex;
     width: 20%;
     justify-content: center;
 }
 
-.userDetailsCardDetailsHeaddingContainer .searchBarContainer {
+.userDetailsCardDetailsContainer .headdingContainer .searchBarContainer {
     display: flex;
     width: 30%;
     justify-content: center;

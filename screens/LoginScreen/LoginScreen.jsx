@@ -13,7 +13,9 @@ function LoginScreen() {
           <div className="loginScreenContentContainer">
             <h1 className="loginScreenHeadding">Welcome Back!</h1>
             <p className="loginScreenDescription">Login to continue</p>
+            <p>Username</p>
             <input className="loginScreenInputs" type="text" />
+            <p>Password</p>
             <input className="loginScreenInputs" type="password" />
             <div className="loginScreenButtonContainer">
               <TextButton width={"45%"} height={38} buttonText="Login" />

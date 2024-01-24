@@ -42,6 +42,13 @@ function UserDetailsCard({}) {
               </div>
             </div>
           </div>
+          <div className="userDetailsCardDetailsHeaddingContainer">
+            <p>serial.No</p>
+            <p>Username</p>
+            <p>Farm Name</p>
+            <p>Location</p>
+            <input type="text" />
+          </div>
           <div className="userDetailsCardDetailsContainer">
             <UserCard />
           </div>

@@ -1,16 +1,17 @@
-.loginScreenContainer{
+.loginScreenContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-image: url('../assets/loginScreenCard.jpg');
+    background-image: url('../assets/loginScreenCard.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.loginScreenCardContianer{
+
+.loginScreenCardContianer {
     background-color: #fff;
     display: flex;
     position: relative;
@@ -21,13 +22,14 @@
     box-shadow: 5px 4px 10px 1px rgba(1, 1, 1, .1);
 }
 
-.loginScreenImageContainer{
+.loginScreenImageContainer {
     display: flex;
     flex-direction: column;
     width: 50%;
     height: 100%;
 }
-.loginScreenImageContainer img{
+
+.loginScreenImageContainer img {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -36,7 +38,8 @@
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-.loginScreenLoginContainer{
+
+.loginScreenLoginContainer {
     display: flex;
     flex-direction: column;
     width: 45%;
@@ -44,40 +47,47 @@
     align-items: center;
     justify-content: center;
 }
-.loginScreenContentContainer{
+
+.loginScreenContentContainer {
     display: flex;
     flex-direction: column;
     width: 80%;
 }
-.loginScreenHeadding{
+
+.loginScreenHeadding {
     color: #076DFC;
     font-size: 34px;
 }
-.loginScreenDescription{
+
+.loginScreenDescription {
     font-size: 16px;
     margin-bottom: 80px;
     color: gray;
 }
-.loginScreenInputs{
+
+.loginScreenInputs {
     height: 30px;
     margin-bottom: 20px;
     border: 3px solid #076DFC;
     border-radius: 5px;
-    
+
 }
-.loginScreenButtonContainer{
+
+.loginScreenButtonContainer {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
 }
-.loginScreenForgotPasswordContainer{
+
+.loginScreenForgotPasswordContainer {
     display: flex;
     flex-direction: column;
     flex: 1;
     justify-content: center;
-    
+
 }
-.loginScreenForgotPassword{
+
+.loginScreenForgotPassword {
     display: inline;
     text-align: right;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./LoginScreen.css";
 import TextButton from "../../components/TextButton/TextButton";
-import LoginScreenImage from "../../assets/loginScreenImage.jpg";
+import LoginScreenImage from "../../assets/loginScreenImage.png";
 function LoginScreen() {
   return (
     <div className="loginScreenContainer">

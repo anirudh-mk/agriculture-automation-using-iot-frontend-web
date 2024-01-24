@@ -22,43 +22,43 @@
     border-radius: 15px;
 }
 
-.userCardContainerMenuIcon:hover {
+.userCardContainer .SerialNoContainer {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+}
+
+.userCardContainer .UserNameContainer {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.userCardContainer .FarmNameContainer {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.userCardContainer .LocationContainer {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.userCardContainer .ImageContainer {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.userCardContainer .OptionContainer {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+}
+
+.userCardContainer .MenuIcon:hover {
     cursor: pointer;
     transform: scale(1.1);
-}
-
-.userCardContainerSerialNoContainer {
-    display: flex;
-    justify-content: center;
-    width: 10%;
-}
-
-.userCardContainerUserNameContainer {
-    display: flex;
-    justify-content: center;
-    width: 20%;
-}
-
-.userCardContainerFarmNameContainer {
-    display: flex;
-    justify-content: center;
-    width: 20%;
-}
-
-.userCardContainerLocationContainer {
-    display: flex;
-    justify-content: center;
-    width: 20%;
-}
-
-.userCardContainerImageContainer {
-    display: flex;
-    justify-content: center;
-    width: 20%;
-}
-
-.userCardContainerOptionContainer {
-    display: flex;
-    justify-content: center;
-    width: 10%;
 }

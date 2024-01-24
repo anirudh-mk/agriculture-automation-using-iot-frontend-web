@@ -6,24 +6,24 @@ import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 function UserCard() {
   return (
     <div className="userCardContainer">
-      <div className="userCardContainerSerialNoContainer">
+      <div className="SerialNoContainer">
         <p>1</p>
       </div>
-      <div className="userCardContainerUserNameContainer">
+      <div className="UserNameContainer">
         <p>Anirudh</p>
       </div>
-      <div className="userCardContainerFarmNameContainer">
+      <div className="FarmNameContainer">
         <p>farm1</p>
       </div>
-      <div className="userCardContainerLocationContainer">
+      <div className="LocationContainer">
         <p>Kerala</p>
       </div>
-      <div className="userCardContainerImageContainer">
+      <div className="ImageContainer">
         <img src="" alt="" className="userCardUserImage" />
       </div>
-      <div className="userCardContainerOptionContainer">
+      <div className="OptionContainer">
         <FontAwesomeIcon
-          className="userCardContainerMenuIcon"
+          className="MenuIcon"
           icon={faEllipsisVertical}
           size="lg"
         />

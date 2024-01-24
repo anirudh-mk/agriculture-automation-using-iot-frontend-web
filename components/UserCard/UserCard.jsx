@@ -1,8 +1,8 @@
 import React from "react";
 import "./UserCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
+
 function UserCard() {
   return (
     <div className="userCardContainer">

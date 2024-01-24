@@ -49,14 +49,12 @@
 
 .userDetailsCardDetailsHeaddingContainer {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 60px;
+    flex-direction: row;
     align-items: center;
+    padding: 10px 20px 10px 20px;
 }
 
 .userDetailsCardDetailsHeaddingContainer P {
-    margin: 20px;
     color: #000;
     font-size: 20px;
     font-style: normal;
@@ -68,7 +66,37 @@
     border-radius: 20px;
     border: 0px solid #000;
     background: #F5F5F5;
-    width: 300px;
+    width: 90%;
     height: 40px;
     flex-shrink: 0;
+}
+
+.userDetailsCardDetailsHeaddingContainer .serialNoContianer {
+    display: flex;
+    width: 10%;
+    justify-content: center;
+}
+
+.userDetailsCardDetailsHeaddingContainer .userNameContainer {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+.userDetailsCardDetailsHeaddingContainer .farmNameContainer {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+.userDetailsCardDetailsHeaddingContainer .locationContainer {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+.userDetailsCardDetailsHeaddingContainer .searchBarContainer {
+    display: flex;
+    width: 30%;
+    justify-content: center;
 }

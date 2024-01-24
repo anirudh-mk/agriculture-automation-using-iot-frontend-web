@@ -43,11 +43,21 @@ function UserDetailsCard({}) {
             </div>
           </div>
           <div className="userDetailsCardDetailsHeaddingContainer">
-            <p>serial.No</p>
-            <p>Username</p>
-            <p>Farm Name</p>
-            <p>Location</p>
-            <input type="text" />
+            <div className="serialNoContianer">
+              <p>Serial No</p>
+            </div>
+            <div className="userNameContainer">
+              <p>User Name</p>
+            </div>
+            <div className="farmNameContainer">
+              <p>Farm Name</p>
+            </div>
+            <div className="locationContainer">
+              <p>Location</p>
+            </div>
+            <div className="searchBarContainer">
+              <input type="text" />
+            </div>
           </div>
           <div className="userDetailsCardDetailsContainer">
             <UserCard />

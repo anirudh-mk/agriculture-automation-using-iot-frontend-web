@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./VegetableDetailsCard.css";
 import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
-
 import IconButton from "../IconButton/IconButton";
 import UserCreateCard from "../UserCreateCard/UserCreateCard";
+
 function VegetableDetailsCard() {
   const [create, setCreate] = useState(false);
   const handelCreate = () => {
@@ -23,12 +23,12 @@ function VegetableDetailsCard() {
       }}
     >
       {!create && (
-        <div className="vegetableDetailsCardTopContainer">
-          <div className="vegetableDetailsCardTopHeadding">
-            <h1>Vegetables</h1>
-          </div>
-          <div className="vegetableDetailsCardCreateButtonContainer">
-            <div className="vegetableDetailsCardCreateButtonContainer">
+        <>
+          <div className="topContainer">
+            <div className="topHeadding">
+              <h1>Vegetables</h1>
+            </div>
+            <div className="createButtonContainer">
               <IconButton
                 width={140}
                 height={50}
@@ -38,7 +38,32 @@ function VegetableDetailsCard() {
               />
             </div>
           </div>
-        </div>
+          <div className="detailsContainer">
+            <div className="headdingContainer">
+              <div className="serialNoContianer">
+                <p>Serial No</p>
+              </div>
+              <div className="vegetableNameContainer">
+                <p>Name</p>
+              </div>
+              <div className="NContainer">
+                <p>N</p>
+              </div>
+              <div className="PContainer">
+                <p>P</p>
+              </div>
+              <div className="KContainer">
+                <p>K</p>
+              </div>
+              <div className="timeRequiredContainer">
+                <p>Time Required</p>
+              </div>
+              <div className="searchBarContainer">
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+        </>
       )}
       {create && <UserCreateCard handleCloseButton={handleClose} />}
     </div>

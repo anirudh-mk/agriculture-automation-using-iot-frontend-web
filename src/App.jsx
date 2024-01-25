@@ -11,18 +11,17 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://dev.mulearn.org/api/v1/register/community/list/")
+      .post("http://127.0.0.1:8000/api/v1/user/login/", {
+        email: username,
+        password: password,
+      })
       .then(function (response) {
-        // handle success
-        console.log(response.data.response.communities);
+        console.log(response);
       })
       .catch(function (error) {
-        // handle error
         console.log(error);
       })
-      .finally(function () {
-        // always executed
-      });
+      .finally(function () {});
   });
 
   const handleLogin = () => {

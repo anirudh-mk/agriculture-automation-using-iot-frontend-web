@@ -3,6 +3,7 @@ import "./VegetableDetailsCard.css";
 import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 import IconButton from "../IconButton/IconButton";
 import UserCreateCard from "../UserCreateCard/UserCreateCard";
+import VegetableCard from "../VegetableCard/VegetableCard";
 
 function VegetableDetailsCard() {
   const [create, setCreate] = useState(false);
@@ -62,6 +63,7 @@ function VegetableDetailsCard() {
                 <input type="text" />
               </div>
             </div>
+            <VegetableCard />
           </div>
         </>
       )}

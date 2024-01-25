@@ -9,27 +9,21 @@ function App() {
   const [password, setPassword] = useState("");
   const [loginError, setLoginError] = useState(false);
 
-  useEffect(() => {
+  const handleLogin = () => {
     axios
       .post("http://127.0.0.1:8000/api/v1/user/login/", {
         email: username,
         password: password,
       })
       .then(function (response) {
-        console.log(response);
+        const accessToken = response.data.response.accessToken;
+        console.log(accessToken);
+        setLogin(true);
       })
       .catch(function (error) {
         console.log(error);
       })
       .finally(function () {});
-  });
-
-  const handleLogin = () => {
-    if (username === "anirudh" && password === "1234") {
-      setLogin(true);
-    } else {
-      setLoginError(true);
-    }
   };
   const handleLogout = () => {
     setLogin(false);

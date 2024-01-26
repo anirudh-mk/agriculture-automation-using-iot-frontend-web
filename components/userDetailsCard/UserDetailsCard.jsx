@@ -79,6 +79,8 @@ function UserDetailsCard({}) {
                 key={item.id}
                 serialNo={index + 1}
                 username={item.username}
+                farmName={item.farm_name}
+                location={item.location}
               />
             ))}
           </div>

@@ -3,20 +3,20 @@ import "./UserCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 
-function UserCard() {
+function UserCard({ serialNo, username, farmName, location }) {
   return (
     <div className="userCardContainer">
       <div className="SerialNoContainer">
-        <p>1</p>
+        <p>{serialNo}</p>
       </div>
       <div className="UserNameContainer">
-        <p>Anirudh</p>
+        <p>{username}</p>
       </div>
       <div className="FarmNameContainer">
-        <p>farm1</p>
+        <p>{farmName}</p>
       </div>
       <div className="LocationContainer">
-        <p>Kerala</p>
+        <p>{location}</p>
       </div>
       <div className="ImageContainer">
         <img src="" alt="" className="userCardUserImage" />

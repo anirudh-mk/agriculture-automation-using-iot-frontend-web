@@ -1,13 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./UserDetailsCard.css";
 import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
-
+import axios from "axios";
 import IconButton from "../IconButton/IconButton";
 import UserCreateCard from "../UserCreateCard/UserCreateCard";
 import UserCard from "../UserCard/UserCard";
 
 function UserDetailsCard({}) {
+  // state variables
   const [create, setCreate] = useState(false);
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    const userData = async () => {
+      try {
+        const response = await axios.get(
+          "http://127.0.0.1:8000/api/v1/user/list/"
+        );
+        setData(response.data.response);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    userData();
+  }, []);
+  // functions
   const handelCreate = () => {
     setCreate(true);
   };
@@ -15,7 +31,7 @@ function UserDetailsCard({}) {
   const handleClose = () => {
     setCreate(!create);
   };
-
+  console.log(data);
   return (
     <div
       className="userDetailsCardContainer"
@@ -58,10 +74,13 @@ function UserDetailsCard({}) {
                 <input type="text" />
               </div>
             </div>
-            <UserCard />
-            <UserCard />
-            <UserCard />
-            <UserCard />
+            {data.map((item, index) => (
+              <UserCard
+                key={item.id}
+                serialNo={index + 1}
+                username={item.username}
+              />
+            ))}
           </div>
         </>
       )}

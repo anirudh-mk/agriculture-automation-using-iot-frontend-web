@@ -16,8 +16,7 @@ function App() {
         password: password,
       })
       .then(function (response) {
-        const accessToken = response.data.response.accessToken;
-        console.log(accessToken);
+        localStorage.setItem("accessToken", response.data.response.accessToken);
         setLogin(true);
       })
       .catch(function (error) {

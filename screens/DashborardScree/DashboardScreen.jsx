@@ -20,6 +20,8 @@ function DashboardScreen({ handleLogout }) {
     setNavigation("mapCard");
   };
 
+  const accessToken = localStorage.getItem("accessToken");
+
   return (
     <div className="dashboardScreenContiner">
       <div className="dashboardScreenSideContainer">

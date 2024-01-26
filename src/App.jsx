@@ -25,6 +25,7 @@ function App() {
       .finally(function () {});
   };
   const handleLogout = () => {
+    localStorage.removeItem("accessToken");
     setLogin(false);
   };
 

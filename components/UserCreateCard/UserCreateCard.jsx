@@ -3,7 +3,7 @@ import "./UserCreateCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import TextButton from "..//TextButton/TextButton";
-
+import axios from "axios";
 function UserCreateCard({ handleCloseButton }) {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -80,11 +80,18 @@ function UserCreateCard({ handleCloseButton }) {
     } else {
       setPhonePresent(false);
     }
-    if (phone >= 12) {
-      setInvalidPhone(true);
-    } else {
-      setInvalidPhone(false);
-    }
+    axios
+      .post("http://127.0.0.1:8000/api/v1/user/register/", {
+        first_name: firstName,
+        last_name: lastName,
+        email: email,
+        username: username,
+      })
+      .then(function (response) {})
+      .catch(function (error) {
+        console.log(error);
+      })
+      .finally(function () {});
   };
   return (
     <div className="userCreateCardContainer">

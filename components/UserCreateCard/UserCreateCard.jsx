@@ -180,7 +180,7 @@ function UserCreateCard({ handleCloseButton }) {
           <div className="userCreateCardInputsColumnContainer">
             <p className="userCreateCardInputHeadding">Location</p>
             <input
-              type="password"
+              type="text"
               className="userCreateCardInput"
               onChange={handleLocation}
             />
@@ -190,7 +190,7 @@ function UserCreateCard({ handleCloseButton }) {
           <div className="userCreateCardInputsColumnContainer">
             <p className="userCreateCardInputHeadding">Machine Code</p>
             <input
-              type="password"
+              type="text"
               className="userCreateCardInput"
               onChange={handleMachineCode}
             />
@@ -198,7 +198,7 @@ function UserCreateCard({ handleCloseButton }) {
           <div className="userCreateCardInputsColumnContainer">
             <p className="userCreateCardInputHeadding">Address</p>
             <input
-              type="password"
+              type="text"
               className="userCreateCardInput"
               onChange={handleAddress}
             />
